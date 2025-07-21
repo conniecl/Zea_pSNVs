@@ -1,4 +1,4 @@
-1. Fst estimation
+### 1. Fst estimation
 ```
 ~/software/genomics_general/VCF_processing/parseVCF.py -i zea_nonsys.1.recode.vcf -o zea_nonsys.1.geno.gz
 for i in nicaraguensis luxurians diploperennis huehuetenangensis mexicana parviglumis;
@@ -12,15 +12,15 @@ done
 done
 done
 ```
-2. averagely Fst of pSNVs and missense mutations
+### 2. averagely Fst of pSNVs and missense mutations
 ```
 perl avg_fst.pl
 ```
-3. highly divergent pSNVs
+### 3. highly divergent pSNVs
 ```
 perl top10_psnv.pl
 ```
-4. gwas
+### 4. gwas
 ```
 plink --threads 10 --vcf ../maize_1.imp.vcf.gz --maf 0.05 --biallelic-only --make-bed --out maize_1.maf_0.05 --noweb
 plink --threads 12 --allow-extra-chr --bfile maize_1.maf_0.05 --indep-pairwise 50 10 0.1 --out maize_1
