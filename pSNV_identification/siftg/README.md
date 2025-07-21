@@ -7,7 +7,7 @@
 ```mkdir gene-annotation-src ```
 ```perl max_trans.pl```
 ```mkdir chr-src```
-### 3. construct SIFT DB数据库
+### 3. build SIFT DB
 ```cd ~/software/sift4g/scripts_to_build_SIFT_db```
 ```nohup perl make-SIFT-db-all.pl -config maize_config.txt ```
 ### 4. VCF annotation
