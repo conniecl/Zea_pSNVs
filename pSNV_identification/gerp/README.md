@@ -1,9 +1,11 @@
-#·1. Repeat mask
+### 1. Repeat mask
+```
 input=$1
 thread=$2
-/mnt/sda/lchen/software/RepeatModeler-2.0.4/BuildDatabase -name $input $input.fa
-/mnt/sda/lchen/software/RepeatModeler-2.0.4/RepeatModeler -database $input -threads $thread
-/mnt/sda/lchen/software/RepeatMasker/RepeatMasker -gff -lib ${input}-families.fa -dir $input $input.fa -xsmall -pa $thread -e rmblast
+~/software/RepeatModeler-2.0.4/BuildDatabase -name $input $input.fa
+~/RepeatModeler-2.0.4/RepeatModeler -database $input -threads $thread
+~/RepeatMasker/RepeatMasker -gff -lib ${input}-families.fa -dir $input $input.fa -xsmall -pa $thread -e rmblast
+```
 # 2. 以玉米为参考基因组建立索引
 #convert softmask to unmask
 sed -i 's/[a-z]/\U&/g' Zea_mays.fa
