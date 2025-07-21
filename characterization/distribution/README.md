@@ -1,5 +1,7 @@
 ### positional distribution of pSNVs
-metadis.pl
-meta_exp.pl
-meta_pexp.pl
-avg_expmeta.pl
+```
+perl metadis.pl
+perl meta_exp.pl
+perl meta_pexp.pl
+perl avg_expmeta.pl
+```
