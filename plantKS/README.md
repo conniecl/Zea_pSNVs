@@ -39,4 +39,5 @@ rewriting.r #change the model in Rmimp.R to that we trained
 
 ```
 
-### Code for model training was written based on the descriptions in the MIMP (https://www.nature.com/articles/nmeth.3396), "pwm-functions.r" and "Rmimp.R" used in model training and rpSNVs prediction can be obtained through https://github.com/omarwagih/rmimp 
+##### Code for model training was written based on the descriptions in the MIMP (https://www.nature.com/articles/nmeth.3396), "pwm-functions.r" and "Rmimp.R" used in model training and rpSNVs prediction can be obtained through https://github.com/omarwagih/rmimp 
+
